@@ -11,7 +11,7 @@ app.use(body_parser.urlencoded({limit:'50mb', extended: true}));
 app.use(express.static("assets"));
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/ecommerce");
+mongoose.connect("mongodb+srv://Aniket:<Aniket@1234>@cluster0.rogk1.mongodb.net/test");
 const db = mongoose.connection;
 db.on("error", error=> console.log(error));
 db.on("open", ()=> console.log("Connection Established"));
