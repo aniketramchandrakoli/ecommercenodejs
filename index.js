@@ -42,7 +42,7 @@ app.use("/product", require("./routes/product"));
 app.use("/order", require("./routes/order"));
 app.use("/subscription", require("./routes/subscription"));
 
-const.PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT,function(){
     console.log("website is running...");
 })
